@@ -1,0 +1,16 @@
+<ion-view title="Cadastro de agência" id="page6" style="">
+  <ion-content padding="true" class="has-header">
+    <form id="cadastroDeAgNcia-form8" class="list" name = "cadastroAgenciaForm" ng-submit = "adicionar(agencia)">
+      <label class="item item-select">
+            <span class="input-label">Escolha uma instituição</span>
+            <select ng-model = "agencia.banco" ng-options = "banco.nome for banco in bancos" ng-required = "true">                    
+            </select>
+          </label>
+      <label class="item item-input">
+        <input placeholder="Número" type="number" ng-required = "true" ng-model = "agencia.numero">
+      </label>
+      <button class="button icon-left button-positive  button-block ion-checkmark-circled" type = "submit" 
+      ng-disabled = "cadastroAgenciaForm.$invalid">Cadastrar</button>
+    </form>
+  </ion-content>
+</ion-view>

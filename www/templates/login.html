@@ -1,0 +1,15 @@
+<ion-view title="Login" id="page1" style="">
+  <ion-content padding="true" class="has-header">
+    <form id="login-form4" class="list" name = "loginForm" ng-submit = "login(conta)">
+      <label class="item item-input" id="login-input3">
+        <input placeholder="Número da Conta" type="text" ng-required = "true" ng-model = "conta.numero">
+      </label>
+      <label class="item item-input" id="login-input4">
+        <input placeholder="Senha" type="password" ng-required = "true" ng-model = "conta.senha">
+      </label>
+
+      <button id="login-button1" class="button button-positive button-block" type = "submit"
+      ng-disabled = "loginForm.$invalid">Entrar</button>
+    </form>
+  </ion-content>
+</ion-view>

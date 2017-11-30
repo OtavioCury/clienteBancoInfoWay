@@ -1,0 +1,13 @@
+<ion-view title="Escolha a instituição" style="">
+  <ion-content padding="true" class="has-header">
+    <form class="list" name = "escolhaInstituicaoForm" ng-submit = "proximaEtapa(banco)">
+      <label class="item item-select">
+        <span class="input-label">Escolha uma instituição</span>
+        <select ng-model = "banco" ng-options = "banco.nome for banco in bancos" ng-required = "true">                    
+        </select>
+      </label>
+      <button class="button icon-left button-positive  button-block ion-checkmark-circled" type = "submit" 
+      ng-disabled = "escolhaInstituicaoForm.$invalid">Próxima etapa</button>
+    </form>
+  </ion-content>
+</ion-view>

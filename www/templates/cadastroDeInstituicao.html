@@ -1,0 +1,11 @@
+<ion-view title="Cadastro de instituição" id="page5" style="">
+  <ion-content padding="true" class="has-header">
+    <form id="cadastroDeInstituiO-form6" class="list" name = "cadastroBancoForm" ng-submit = "adicionar(banco)">
+      <label class="item item-input" id="cadastroDeInstituiO-input7">
+        <input placeholder="Nome" type="text" ng-model = "banco.nome" ng-required = "true">
+      </label>
+      <button class="button icon-left button-positive  button-block ion-checkmark-circled" type = "submit" 
+      ng-disabled = "cadastroBancoForm.$invalid">Adicionar Banco</button>
+    </form>
+  </ion-content>
+</ion-view>

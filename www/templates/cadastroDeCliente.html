@@ -1,0 +1,30 @@
+<ion-view title="Cadastro de cliente e conta" id="page7" style="">
+  <ion-content padding="true" class="has-header">
+    <form name = "cadastroClienteForm" class="list" ng-submit = "adicionar(conta)">
+      <label class="item item-input" id="cadastroDeCliente-input10">
+        <input placeholder="Nome do cliente" type="text" ng-model="conta.cliente.nome" ng-required = "true">
+      </label>
+      <label class="item item-select">
+        <span class="input-label">Escolha uma agência</span>
+        <select ng-model = "conta.agencia" ng-options = "agencia.numero for agencia in agencias" ng-required = "true">                    
+        </select>
+      </label>
+
+      <label class="item item-select">
+        <span class="input-label">Tipo de conta</span>
+        <select ng-required = "true" ng-model = "conta.tipoConta">
+          <option>Corrente</option>
+          <option>Poupança</option>
+        </select>
+      </label>
+      <label class="item item-input" id="cadastroDeCliente-input15">
+        <input placeholder="Número da conta" type="text" ng-model="conta.numero" ng-required = "true">
+      </label>
+      <label class="item item-input" id="cadastroDeCliente-input15">
+        <input placeholder="Senha" type="password" ng-model="conta.senha" ng-required = "true">
+      </label>
+      <button class="button icon-left button-positive  button-block ion-checkmark-circled" type = "submit" 
+      ng-disabled = "cadastroClienteForm.$invalid">Cadastrar</button>
+    </form>
+  </ion-content>
+</ion-view>

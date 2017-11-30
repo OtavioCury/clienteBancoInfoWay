@@ -1,0 +1,17 @@
+<ion-view title="Transferência" id="page11" style="">
+  <ion-content padding="true" class="has-header">
+    <form id="transferNcia-form12" class="list" name = "transferenciaForm" ng-submit = "transferencia(valor, numero, agencia)">
+      <label class="item item-input" id="transferNcia-input13">
+        <input placeholder="Agência" type="number" ng-model = "agencia" ng-required = "true">
+      </label>
+      <label class="item item-input" id="transferNcia-input13">
+        <input placeholder="Número da conta" type="number" ng-model = "numero" ng-required = "true">
+      </label>
+      <label class="item item-input" id="transferNcia-input14">
+        <input placeholder="Valor" type="number" ng-model = "valor" ng-required = "true">
+      </label>
+      <button id="transferNcia-button17" class="button button-positive button-block"
+      type = "submit" ng-disabled = "transferenciaForm.$invalid">Realizar</button>
+    </form>
+  </ion-content>
+</ion-view>
